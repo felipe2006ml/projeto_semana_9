@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/teste.jpg');
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background: #000
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-size: 1.5em;
+}
+
+.active {
+    background: white;
+    color: black;
+}
+
+header nav a:hover {
+    background: #fff;
+    color:#000;
+    transition: 1s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 600px;
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    padding: 50px;
+    
+}
+
+#img-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#img-title img{
+    width: 40%;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#content-title {
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#content-title h1 {
+    text-shadow: 1px 5px 5px black;
+    font-size: 2.5em;
+    color: white;
+}
+
+#content-title p {
+    text-shadow: 1px 3px 2px black;
+    font-size: 1.2em;
+    color: white;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 600px;
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    padding: 50px;
+    color: white;
+}
+
+#img-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-profile img {
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#content-profile {
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#content-profile p {
+    text-shadow: 1px 3px 2px black;
+    font-size: 1.2em;
+    color: white;
+}
+
+#content-profile p a{
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0;
+}
+
+#network-profile {
+    margin-top: 50px;
+}
+
+#network-profile img {
+    width: 70px;
+    padding: 10px;
+}
+
+/* pagina campeões */
+
+#container-campeoes {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 800px;
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    padding: 50px;
+    color: white;
+}
+
+#container-campeoes h1{
+    color: white;
+}
+
+#content-champ {
+    display: flex;
+    justify-content: space-between;
+}
+
+#skins img {
+    margin: 30px;
+    width: 700px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
