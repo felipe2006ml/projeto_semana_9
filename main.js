@@ -4,7 +4,7 @@ let sliderPhoto = 0
 async function buscaChamp() {
     const selectChamp = document.getElementById('select-champ')
 
-    let url = `http://ddragon.leagueoflegends.com/cdn/11.4.1/data/pt_BR/champion.json`
+    let url = `https://ddragon.leagueoflegends.com/cdn/11.4.1/data/pt_BR/champion.json`
 
     const response = await fetch(url)
     const dadosJSON = await response.json()
@@ -25,7 +25,7 @@ async function showChamp(nome) {
     let detailFight = document.getElementById('detail-fight')
     let skillsChamp = document.getElementById('skills-champ')
 
-    let url = `http://ddragon.leagueoflegends.com/cdn/11.4.1/data/pt_BR/champion/${nome}.json`
+    let url = `https://ddragon.leagueoflegends.com/cdn/11.4.1/data/pt_BR/champion/${nome}.json`
 
 
     const response = await fetch(url)
@@ -75,11 +75,11 @@ async function showChamp(nome) {
     `
    skillsChamp.innerHTML =
    `<div id="habilidades">
-    <img style="opacity:100%" id="passiva" onclick="showHabPass(dados.passive)" src="http://ddragon.leagueoflegends.com/cdn/11.4.1/img/passive/${dados.passive.image.full}">
-    <img id="${dados.spells[0].id}" onclick="showHab(dados.spells[0], dados)" src="http://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[0].image.full}">
-    <img id="${dados.spells[1].id}" onclick="showHab(dados.spells[1], dados)" src="http://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[1].image.full}">
-    <img id="${dados.spells[2].id}" onclick="showHab(dados.spells[2], dados)" src="http://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[2].image.full}">
-    <img id="${dados.spells[3].id}" onclick="showHab(dados.spells[3], dados)" src="http://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[3].image.full}">
+    <img style="opacity:100%" id="passiva" onclick="showHabPass(dados.passive)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/passive/${dados.passive.image.full}">
+    <img id="${dados.spells[0].id}" onclick="showHab(dados.spells[0], dados)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[0].image.full}">
+    <img id="${dados.spells[1].id}" onclick="showHab(dados.spells[1], dados)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[1].image.full}">
+    <img id="${dados.spells[2].id}" onclick="showHab(dados.spells[2], dados)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[2].image.full}">
+    <img id="${dados.spells[3].id}" onclick="showHab(dados.spells[3], dados)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[3].image.full}">
    </div>
 
    <div id="habilidades-content">
@@ -100,7 +100,7 @@ async function showChamp(nome) {
         if(aux < (dadosSkin - 1)) {
             skinsS.innerHTML = ""
             skinsS.innerHTML =
-            `<img src="${`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${nome}_${auxurl}.jpg`}">
+            `<img src="${`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${nome}_${auxurl}.jpg`}">
             `
             aux = aux + 1
         } else {
