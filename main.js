@@ -137,13 +137,14 @@ function statsLevel() {
     
     contentT.innerHTML =
     `<p>Vida base: ${hp+((valorInput * hppl) - hppl)}</p>
-    <p>Velocidade de Movimento base: ${movespeed}</p>
+    <p>Velocidade de Movimento Base: ${movespeed}</p>
     <p>Distancia de Ataque: ${attackrange}</p>
     <p>Velocidade de Ataque Base: ${((valorInput * attackspeedpl) + attackspeed - attackspeedpl).toFixed(2)}</p>
     <p>Dano de Ataque Base: ${((valorInput * attackdamagepl) + attackdamage - attackdamagepl).toFixed(2)}</p>
     <p>Armadura Base: ${((valorInput * armorpl) + armor - armorpl).toFixed(2)}</p>
     <p>Resistência Mágica: ${((valorInput * spellblockpl) + spellblock - spellblockpl).toFixed(2)}</p>
     <p>Mana Base: ${mp + ((valorInput * mppl) - mppl)}</p>
+    <canvas id="myChart" height="100"></canvas>
     `
 }
 
@@ -195,4 +196,8 @@ function showHabPass(hab) {
     <p>${hab.description}</p>
 
     `
+}
+
+function grafico() {
+    
 }
