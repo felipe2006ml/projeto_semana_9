@@ -75,11 +75,11 @@ async function showChamp(nome) {
     `
    skillsChamp.innerHTML =
    `<div id="habilidades">
-    <img style="opacity:100%" id="passiva" onclick="showHabPass(dados.passive)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/passive/${dados.passive.image.full}">
-    <img id="${dados.spells[0].id}" onclick="showHab(dados.spells[0], dados)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[0].image.full}">
-    <img id="${dados.spells[1].id}" onclick="showHab(dados.spells[1], dados)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[1].image.full}">
-    <img id="${dados.spells[2].id}" onclick="showHab(dados.spells[2], dados)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[2].image.full}">
-    <img id="${dados.spells[3].id}" onclick="showHab(dados.spells[3], dados)" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[3].image.full}">
+    <img id="passiva" onclick="showHabPass(dados.passive)" class="hab-active" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/passive/${dados.passive.image.full}">
+    <img id="${dados.spells[0].id}" onclick="showHab(dados.spells[0], dados)" class="hab-no-active" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[0].image.full}">
+    <img id="${dados.spells[1].id}" onclick="showHab(dados.spells[1], dados)" class="hab-no-active" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[1].image.full}">
+    <img id="${dados.spells[2].id}" onclick="showHab(dados.spells[2], dados)" class="hab-no-active" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[2].image.full}">
+    <img id="${dados.spells[3].id}" onclick="showHab(dados.spells[3], dados)" class="hab-no-active" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/spell/${dados.spells[3].image.full}">
    </div>
 
    <div id="habilidades-content">
@@ -156,13 +156,13 @@ function showHab(hab, dados) {
     let e = document.getElementById(dados.spells[2].id)
     let r = document.getElementById(dados.spells[3].id)
 
-    p.setAttribute('style', 'opacity: 40%')
-    q.setAttribute('style', 'opacity: 40%')
-    w.setAttribute('style', 'opacity: 40%')
-    e.setAttribute('style', 'opacity: 40%')
-    r.setAttribute('style', 'opacity: 40%')
+    p.setAttribute('class', 'hab-no-active')
+    q.setAttribute('class', 'hab-no-active')
+    w.setAttribute('class', 'hab-no-active')
+    e.setAttribute('class', 'hab-no-active')
+    r.setAttribute('class', 'hab-no-active')
 
-    teste.setAttribute('style', 'opacity: 100%')
+    teste.setAttribute('class', 'hab-active')
     
 
 
@@ -176,17 +176,18 @@ function showHabPass(hab) {
     let habContent = document.getElementById('habilidades-content')
     let teste2 = document.getElementById('passiva')
     
-    teste2.setAttribute('style', 'opacity: 100%')
+    
 
     let q = document.getElementById(dados.spells[0].id)
     let w = document.getElementById(dados.spells[1].id)
     let e = document.getElementById(dados.spells[2].id)
     let r = document.getElementById(dados.spells[3].id)
-    q.setAttribute('style', 'opacity: 40%')
-    w.setAttribute('style', 'opacity: 40%')
-    e.setAttribute('style', 'opacity: 40%')
-    r.setAttribute('style', 'opacity: 40%')
+    q.setAttribute('class', 'hab-no-active')
+    w.setAttribute('class', 'hab-no-active')
+    e.setAttribute('class', 'hab-no-active')
+    r.setAttribute('class', 'hab-no-active')
     
+    teste2.setAttribute('class', 'hab-active')
 
 
     habContent.innerHTML = 

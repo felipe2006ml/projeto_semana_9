@@ -226,12 +226,20 @@ main {
 }
 
 #habilidades img {
-    opacity: 40%;
     border-radius: 20px;
     cursor: pointer;
 }
 
-#habilidades img:hover {
+.hab-no-active{
+    opacity: 40%;
+
+}
+
+.hab-no-active:hover {
+    opacity: 100%;
+}
+
+.hab-active {
     opacity: 100%;
 }
 
